@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3646456898004532313}
   m_Layer: 0
   m_Name: CactosFinos
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direcao: {x: -1, y: 0}
-  velocidade: 3
+  velocidade: 4.5
 --- !u!60 &3646456898004532313
 PolygonCollider2D:
   m_ObjectHideFlags: 0
