@@ -18,12 +18,15 @@ public class Jogador : MonoBehaviour
     private float pontos;
     public float multiplicadorDePontos = 1;
     public TMP_Text pontosText;
+    public TMP_Text HighscoreText;
     public Animator animatorComponent;
+    private float highscore;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        highscore = PlayerPrefs.GetFloat("HIGHSCORE");
+        HighscoreText.text = $"Highscore: {Mathf.FloorToInt(highscore)}";
     }
 
     // Update is called once per frame
@@ -34,7 +37,7 @@ public class Jogador : MonoBehaviour
 
         pontosText.text = Mathf.FloorToInt(pontos).ToString();
 
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Pular();
         };
@@ -77,6 +80,12 @@ public class Jogador : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Inimigo"))
         {
+            if (pontos > highscore)
+            {
+                highscore = pontos;
+
+                PlayerPrefs.SetFloat("HIGHSCORE", highscore);
+            }
             SceneManager.LoadScene(0);
         }
     }
