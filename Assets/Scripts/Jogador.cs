@@ -18,6 +18,7 @@ public class Jogador : MonoBehaviour
     private float pontos;
     public float multiplicadorDePontos = 1;
     public TMP_Text pontosText;
+    public Animator animatorComponent;
 
     // Start is called before the first frame update
     void Start()
@@ -33,19 +34,38 @@ public class Jogador : MonoBehaviour
 
         pontosText.text = Mathf.FloorToInt(pontos).ToString();
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.UpArrow))
         {
-            Debug.Log("Pular");
             Pular();
         };
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Abaixar();
+        }
+        else if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            Levantar();
+        }
     }
 
     void Pular()
+
     {
         if (estaNochao)
         {
             rb.AddForce(UnityEngine.Vector2.up * forcaPulo);
         }
+    }
+
+    void Abaixar()
+    {
+        animatorComponent.SetBool("Abaixado", true);
+    }
+
+    void Levantar()
+    {
+        animatorComponent.SetBool("Abaixado", false);
     }
 
     private void FixedUpdate()

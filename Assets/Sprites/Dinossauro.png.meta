@@ -123,12 +123,96 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dinossauro_0
+      name: Dinossauro_Parado
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc59e5e2f0edfe4ba1844e1385d1cf0
+      internalID: 1010724202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dinossauro_Andando1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6b5f8c99752434091b19fea9aab333
+      internalID: 42730298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dinossauro_Andando2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1b8fd5161208241a4cf4fe365c769b
+      internalID: 855698391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dinossauro_Morto
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bd1ea19944a194e980d6685dfef54f
+      internalID: -1709451609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dinossauro_Abaixado1
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 118
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,8 +221,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbc59e5e2f0edfe4ba1844e1385d1cf0
-      internalID: 1010724202
+      spriteID: e737116a00d6e3745b8cf9feaa549878
+      internalID: -98264843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dinossauro_Abaixado2
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 0
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d159881f800354bb04f5a707cb45f0
+      internalID: 765314328
       vertices: []
       indices: 
       edges: []
@@ -154,7 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dinossauro_0: 382028027
+      Dinossauro_Abaixado1: -98264843
+      Dinossauro_Abaixado2: 765314328
+      Dinossauro_Andando1: 42730298
+      Dinossauro_Andando2: 855698391
+      Dinossauro_Morto: -1709451609
+      Dinossauro_Parado: 1010724202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
