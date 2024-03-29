@@ -15,7 +15,7 @@ public class Jogador : MonoBehaviour
     public LayerMask layerChao;
     public float distanciaMinimaChao = 1;
     private bool estaNochao;
-    private float pontos;
+    public float pontos;
     public float multiplicadorDePontos = 1;
     public TMP_Text pontosText;
     public TMP_Text HighscoreText;

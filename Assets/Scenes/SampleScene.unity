@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 1425145647}
   - component: {fileID: 1425145648}
   m_Layer: 0
-  m_Name: GeradorCacto
+  m_Name: GeradorInimigos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1158,10 +1158,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cactoPrefabs:
+  - {fileID: 6980418665918588285, guid: ac84deaabd6b8ea4fa1acc2b4f9f43e7, type: 3}
   - {fileID: 7559207459486629775, guid: a6bf69ae99b091048af995ffd904f7bd, type: 3}
   - {fileID: 7559207459486629775, guid: 58d34c101c87f9c409de3183058e0f58, type: 3}
-  delayInicial: 2
-  delayEntreCactos: 4
+  delayInicial: 0
+  delayEntreCactos: 1.5
 --- !u!1 &1589754703
 GameObject:
   m_ObjectHideFlags: 0
