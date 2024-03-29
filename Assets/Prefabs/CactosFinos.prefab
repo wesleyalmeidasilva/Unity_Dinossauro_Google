@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4596345515172055838}
   - component: {fileID: 6584508879340631916}
-  - component: {fileID: 8161242051594332650}
   - component: {fileID: 3646456898004532313}
+  - component: {fileID: 8161242051594332650}
+  - component: {fileID: 2902050668701407841}
   m_Layer: 0
   m_Name: CactosFinos
   m_TagString: Inimigo
@@ -86,20 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8161242051594332650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6980418665918588285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d980b05716b46b438c1c82555bb684c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direcao: {x: -1, y: 0}
-  velocidade: 4.5
 --- !u!60 &3646456898004532313
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +139,29 @@ PolygonCollider2D:
       - {x: 0.17, y: 0.16499999}
       - {x: 0.14, y: 0.175}
   m_UseDelaunayMesh: 0
+--- !u!114 &8161242051594332650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980418665918588285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d980b05716b46b438c1c82555bb684c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direcao: {x: -1, y: 0}
+  velocidade: 4.5
+--- !u!114 &2902050668701407841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980418665918588285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82f23166843497468764b71fdd92182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

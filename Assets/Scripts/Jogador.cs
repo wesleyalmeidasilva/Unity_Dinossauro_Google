@@ -20,13 +20,16 @@ public class Jogador : MonoBehaviour
     public TMP_Text pontosText;
     public TMP_Text HighscoreText;
     public Animator animatorComponent;
+    public AudioSource pularAudioSource;
+    public AudioSource cemPontosAudioSource;
+    public AudioSource fimDeJogoAudioSource;
     private float highscore;
 
     // Start is called before the first frame update
     void Start()
     {
         highscore = PlayerPrefs.GetFloat("HIGHSCORE");
-        HighscoreText.text = $"Highscore: {Mathf.FloorToInt(highscore)}";
+        HighscoreText.text = $"HI: {Mathf.FloorToInt(highscore)}";
     }
 
     // Update is called once per frame
@@ -35,7 +38,20 @@ public class Jogador : MonoBehaviour
 
         pontos += Time.deltaTime * multiplicadorDePontos;
 
-        pontosText.text = Mathf.FloorToInt(pontos).ToString();
+        var pontosArredondados = Mathf.FloorToInt(pontos);
+
+        pontosText.text = pontosArredondados.ToString();
+
+
+
+        if (
+            pontosArredondados > 0
+            && pontosArredondados % 100 == 0
+            && !cemPontosAudioSource.isPlaying
+        )
+        {
+            cemPontosAudioSource.Play();
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -58,6 +74,8 @@ public class Jogador : MonoBehaviour
         if (estaNochao)
         {
             rb.AddForce(UnityEngine.Vector2.up * forcaPulo);
+
+            pularAudioSource.Play();
         }
     }
 
@@ -86,7 +104,10 @@ public class Jogador : MonoBehaviour
 
                 PlayerPrefs.SetFloat("HIGHSCORE", highscore);
             }
-            SceneManager.LoadScene(0);
+
+            fimDeJogoAudioSource.Play();
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
