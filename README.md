@@ -6,7 +6,7 @@ Olá! Este é um projeto de aprendizado que criei para explorar os fundamentos d
 
 ### Jogue agora!
 
-Acesse o jogo através deste link: [Jogar Dinossauro](https://wesleyalmeidasilva.github.io/Unity_Dinossauro_Google/Builds/TemplateData/index.html)
+Acesse o jogo através deste link: [Jogar Dinossauro](https://wesleyalmeidasilva.github.io/Unity_Dinossauro_Google/Builds/TemplateData/index.html){:target="_blank"}
 
 Divirta-se!
 
