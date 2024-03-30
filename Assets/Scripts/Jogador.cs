@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -24,6 +23,7 @@ public class Jogador : MonoBehaviour
     public AudioSource cemPontosAudioSource;
     public AudioSource fimDeJogoAudioSource;
     private float highscore;
+    public GameObject reiniciarButton;
 
     // Start is called before the first frame update
     void Start()
@@ -107,7 +107,8 @@ public class Jogador : MonoBehaviour
 
             fimDeJogoAudioSource.Play();
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            reiniciarButton.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
